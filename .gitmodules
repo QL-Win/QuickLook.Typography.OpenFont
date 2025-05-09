@@ -1,0 +1,3 @@
+[submodule "ImageGlass"]
+	path = ImageGlass
+	url = https://github.com/d2phap/ImageGlass

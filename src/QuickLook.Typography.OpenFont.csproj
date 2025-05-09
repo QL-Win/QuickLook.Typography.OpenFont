@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net462</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <UseWindowsForms>false</UseWindowsForms>
+        <LangVersion>latest</LangVersion>
+        <Platforms>AnyCPU</Platforms>
+        <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+        <NoWarn>CS0219;CS0414;CS0649;</NoWarn>
+        <PackageId>QuickLook.Typography.OpenFont</PackageId>
+        <Product>QuickLook.Typography.OpenFont</Product>
+        <EnableWindowsTargeting>true</EnableWindowsTargeting>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <Version>$(VersionPrefix)1.0.0.0</Version>
+        <Authors>LayoutFarm master131 QL-Win</Authors>
+        <Company>QL-Win</Company>
+        <Description>This is a part of the QuickLook program, migrated from Typography and BrotliSharpLib.</Description>
+        <PackageProjectUrl>https://github.com/QL-Win/QuickLook.Typography.OpenFont</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/QL-Win/QuickLook.Typography.OpenFont</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>QuickLook woff2</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>app.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="app.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </Content>
+
+        <None Include="..\README.md" Pack="true" PackagePath="" />
+        <None Remove="app.png" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>
